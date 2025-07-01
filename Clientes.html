@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLelectryc - Clientes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos clientes.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container position-relative">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="Inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+            <a class="nav-link active" href="Clientes.html">Clientes</a>
+            </li>
+            </ul>
+            </div>
+
+            <!-- Botón -->
+            <div class="navbar-nav ms-auto me-3">
+                <button class="btn btn-cotizar" data-bs-toggle="modal" data-bs-target="#cotizarModal">
+                    <i class="fas fa-calculator me-2"></i>Cotizar
+                </button>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <a class="navbar-brand mx-auto" href="#">
+            <i class="fas fa-bolt"></i> GLelectryc
+            </a>
+        </div>
+    </nav>
+</header>
+
+    <main class="container border border-dark p-3 my-4">
+
+        <!-- Hero -->
+        <section class="hero-clientes text-center py-5 mb-5">
+            <h1 class="display-4 fw-bold text-white mb-4">Nuestros Clientes</h1>
+            <p class="lead text-white">Conoce las empresas y personas que confían en nuestros servicios eléctricos</p>
+        </section>
+
+        <!-- Estadísticas -->
+        <section class="estadisticas-section py-4 mb-5">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="estadistica-card">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h3 class="text-white">150+</h3>
+                        <p class="text-white">Clientes Satisfechos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="estadistica-card">
+                        <i class="fas fa-project-diagram fa-3x text-success mb-3"></i>
+                        <h3 class="text-white">300+</h3>
+                        <p class="text-white">Proyectos Completados</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="estadistica-card">
+                        <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                        <h3 class="text-white">4.9/5</h3>
+                        <p class="text-white">Calificación Promedio</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-3">
+                    <div class="estadistica-card">
+                        <i class="fas fa-calendar-alt fa-3x text-info mb-3"></i>
+                        <h3 class="text-white">8+</h3>
+                        <p class="text-white">Años de Experiencia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonios-section py-5">
+            <h2 class="text-center text-white mb-5">Testimonios de Nuestros Clientes</h2>
+            <div class="row g-4">
+
+                <!-- testimonio 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonio-card">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <img src="/Imagenes/mujer 1.png" alt="María González" class="cliente-avatar">
+                                <h5 class="mt-3 mb-1">María González</h5>
+                                <p class="text-muted">Propietaria de Hogar</p>
+                            </div>
+                            <div class="rating mb-3 text-center">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonio-texto">"Excelente servicio de instalación eléctrica en mi hogar. El equipo fue muy profesional y terminaron el trabajo en tiempo récord. Totalmente recomendados."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testimonio 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonio-card">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <img src="/Imagenes/hombre 1.jpg" alt="Carlos Mendoza" class="cliente-avatar">
+                                <h5 class="mt-3 mb-1">Carlos Mendoza</h5>
+                                <p class="text-muted">Gerente Industrial</p>
+                            </div>
+                            <div class="rating mb-3 text-center">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonio-texto">"GLelectryc instaló todos los tableros eléctricos de nuestra planta industrial. Su experiencia y profesionalismo son incomparables. Muy satisfecho con el resultado."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testimonio 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonio-card">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <img src="/Imagenes/mujer 2.png" alt="Ana Rodríguez" class="cliente-avatar">
+                                <h5 class="mt-3 mb-1">Ana Rodríguez</h5>
+                                <p class="text-muted">Dueña de Piscina</p>
+                            </div>
+                            <div class="rating mb-3 text-center">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonio-texto">"La instalación de la bomba para mi piscina fue perfecta. El equipo explicó todo el proceso y el mantenimiento. Servicio de primera calidad."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testimonio 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonio-card">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <img src="/Imagenes/hombre 2.jpg" alt="Roberto Silva" class="cliente-avatar">
+                                <h5 class="mt-3 mb-1">Roberto Silva</h5>
+                                <p class="text-muted">Propietario Rural</p>
+                            </div>
+                            <div class="rating mb-3 text-center">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonio-texto">"Necesitaba una bomba sumergible para mi pozo y GLelectryc me dio la mejor solución. Trabajo impecable y precio justo. Los recomiendo al 100%."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testimonio 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonio-card">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <img src="/Imagenes/mujer 3.png" alt="Patricia López" class="cliente-avatar">
+                                <h5 class="mt-3 mb-1">Patricia López</h5>
+                                <p class="text-muted">Administradora de Edificio</p>
+                            </div>
+                            <div class="rating mb-3 text-center">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonio-texto">"Renovamos toda la iluminación del edificio con GLelectryc. Su equipo fue muy organizado y cumplió con todos los plazos establecidos."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- testimonio 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonio-card">
+                        <div class="card-body p-4">
+                            <div class="text-center mb-3">
+                                <img src="/Imagenes/hombre 3.jpg" alt="Diego Martínez" class="cliente-avatar">
+                                <h5 class="mt-3 mb-1">Diego Martínez</h5>
+                                <p class="text-muted">Dueño de Restaurante</p>
+                            </div>
+                            <div class="rating mb-3 text-center">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonio-texto">"GLelectryc hizo toda la instalación eléctrica de mi restaurante. Trabajo profesional, limpio y con todas las certificaciones necesarias."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<section class="casos-exito py-5">
+<h2 class="text-center text-white mb-5">Casos de Éxito</h2>
+    <div class="row g-4">
+
+<!-- Caso 1 -->
+    <div class="col-lg-6">
+        <div class="caso-card">
+            <img src="/Imagenes/Modernización Planta.png" alt="Proyecto Industrial" class="caso-imagen">
+            <div class="caso-contenido p-4">
+                <h4 class="text-primary">Modernización Planta Industrial</h4>
+                <p class="text-muted mb-3">Empresa Manufacturera XYZ</p>
+                <p>Renovación completa del sistema eléctrico de una planta industrial de 5000m². Instalación de 15 tableros eléctricos y sistema de automatización.</p>
+                <div class="caso-stats mt-3">
+                <span class="badge bg-success me-2">Tiempo: 3 meses</span>
+                <span class="badge bg-info">Ahorro energético: 30%</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Caso 2 -->
+    <div class="col-lg-6">
+        <div class="caso-card">
+            <img src="/Imagenes/Condominio Residenci.png" alt="Proyecto Residencial" class="caso-imagen">
+            <div class="caso-contenido p-4">
+                <h4 class="text-primary">Condominio Residencial Premium</h4>
+                <p class="text-muted mb-3">Condominio Las Flores</p>
+                <p>Instalación eléctrica completa para 50 departamentos, incluyendo sistema de iluminación LED inteligente y cargadores para vehículos eléctricos.</p>
+                <div class="caso-stats mt-3">
+                    <span class="badge bg-success me-2">Tiempo: 4 meses</span>
+                    <span class="badge bg-info">50 unidades</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+
+<!-- cotización -->
+<div class="modal fade" id="cotizarModal" tabindex="-1" aria-labelledby="cotizarModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h1 class="modal-title fs-5" id="cotizarModalLabel">
+                    <i class="fas fa-calculator me-2"></i>Solicitar Cotización
+                </h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="cotizacionForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre completo *</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="telefono" class="form-label">Teléfono *</label>
+                            <input type="tel" class="form-control" id="telefono" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipoServicio" class="form-label">Tipo de servicio *</label>
+                        <select class="form-select" id="tipoServicio" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="instalacion-electrica">Instalación eléctrica</option>
+                            <option value="tableros-electricos">Tableros eléctricos</option>
+                            <option value="bombas-agua">Bombas de agua</option>
+                            <option value="iluminacion">Iluminación</option>
+                            <option value="mantenimiento">Mantenimiento</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripción del proyecto *</label>
+                        <textarea class="form-control" id="descripcion" rows="4" placeholder="Describa brevemente su proyecto..." required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="presupuesto" class="form-label">Presupuesto aproximado</label>
+                        <select class="form-select" id="presupuesto">
+                            <option value="">Seleccione un rango</option>
+                            <option value="bajo-500">Menos de $500.000</option>
+                            <option value="500-1000">$500.000 - $1.000.000</option>
+                            <option value="1000-3000">$1.000.000 - $3.000.000</option>
+                            <option value="3000-mas">Más de $3.000.000</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="urgencia" class="form-label">Urgencia del proyecto</label>
+                        <select class="form-select" id="urgencia">
+                            <option value="normal">Normal (1-2 semanas)</option>
+                            <option value="urgente">Urgente (menos de 1 semana)</option>
+                            <option value="inmediato">Inmediato (1-3 días)</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" onclick="enviarCotizacion()">
+                    <i class="fas fa-paper-plane me-2"></i>Enviar Solicitud
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- alerta -->
+<div class="container text-center">
+    <div class="alert alert-dismissible fade show auto-alert shadow-sm p-2 mb-4" role="alert" id="autoDismissAlert">
+        <div class="d-flex justify-content-between align-items-start flex-wrap text-start">
+            <div>
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <strong>¡Contáctanos!</strong> ¿Quieres ser nuestro próximo cliente satisfecho?<br>
+                Solicita tu cotización gratuita y únete a más de 150 clientes que confían en GLelectryc para sus proyectos eléctricos.
+            </div>
+            <button type="button" class="btn-close ms-2" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="progress-bar-timer"></div>
+    </div>
+</div>
+
+<footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container position-relative">
+            <div class="collapse navbar-collapse show" id="footerNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Clientes.html">Clientes</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand mx-auto" href="#">
+                <i class="fas fa-bolt"></i> GLelectryc
+            </a>
+        </div>
+    </nav>
+
+    <div class="bg-dark text-center text-white py-3">
+        <small>&copy; 2025 GLelectryc. Todos los derechos reservados.</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    setTimeout(function () {
+        const alert = document.getElementById('autoDismissAlert');
+        if (alert) {
+            const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
+            bsAlert.close();
+            }
+    }, 15000);
+
+
+</script>
+</body>
+</html>

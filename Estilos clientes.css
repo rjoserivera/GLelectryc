@@ -1,0 +1,260 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        to bottom,
+        rgb(98, 59, 170),
+        rgb(194, 194, 194),
+        rgb(160, 210, 235)
+    );
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* === Main === */
+main.container {
+    background: transparent;
+    border: 3px solid rgb(18, 18, 18);
+    border-radius: 10px;
+    margin-bottom: 80px;
+    padding: 16px;
+}
+
+/* === Hero === */
+.hero-clientes {
+    background: linear-gradient(135deg, rgb(102, 126, 234), rgb(118, 75, 162));
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* estadistica */
+.estadistica-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.estadistica-card:hover {
+    transform: translateY(-5px);
+}
+
+/* testimonios */
+.testimonio-card {
+    background: rgba(255, 255, 255, 0.327);
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.testimonio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cliente-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonio-texto {
+    font-style: italic;
+    color: rgb(102, 102, 102);
+    line-height: 1.6;
+}
+
+.rating i {
+    font-size: 1.2rem;
+    margin: 0 2px;
+}
+
+/* caso */
+.caso-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.caso-card:hover {
+    transform: translateY(-5px);
+}
+
+.caso-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caso-contenido h4 {
+    color: rgb(102, 126, 234);
+    font-weight: bold;
+}
+
+.caso-stats .badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+}
+
+/* alerta */
+.auto-alert {
+    background-color: rgb(170, 240, 255);
+    color: rgb(6, 59, 76);
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    border-left: 5px solid rgb(13, 0, 255);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+    z-index: 1055;
+}
+
+.progress-bar-timer {
+    height: 4px;
+    background-color: rgb(0, 213, 255);
+    width: 100%;
+    animation: shrinkBar 15s linear forwards;
+    border-radius: 0 0 3px 3px;
+    margin-top: 8px;
+}
+
+@keyframes shrinkBar {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+.navbar .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Logo */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+    white-space: nowrap;
+    pointer-events: auto;
+    z-index: 1030;
+}
+
+
+@media (max-width: 768px) {
+    .auto-alert {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 2rem auto;
+    }
+    
+    .estadistica-card {
+        margin-bottom: 1rem;
+    }
+    
+    .caso-imagen {
+        height: 150px;
+    }
+}
+
+.text-primary {
+    color: rgb(102, 126, 234) !important;
+}
+
+.text-success {
+    color: rgb(40, 167, 69) !important;
+}
+
+.text-warning {
+    color: rgb(255, 193, 7) !important;
+}
+
+.text-info {
+    color: rgb(23, 162, 184) !important;
+}
+
+.text-white {
+    color: rgb(255, 255, 255) !important;
+}
+
+.text-muted {
+    color: rgb(108, 117, 125) !important;
+}
+
+.bg-success {
+    background-color: rgb(40, 167, 69) !important;
+}
+
+.bg-info {
+    background-color: rgb(23, 162, 184) !important;
+}
+
+.bg-dark {
+    background-color: rgb(52, 58, 64) !important;
+}
+
+
+/* === Cotizar estilo === */
+.btn-cotizar {
+    background: linear-gradient(135deg, rgb(102, 126, 234), rgb(118, 75, 162));
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-cotizar:hover {
+    background: linear-gradient(135deg, rgb(118, 75, 162), rgb(102, 126, 234));
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-cotizar:focus {
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+    color: white;
+    outline: none;
+    border: none;
+}   
+
